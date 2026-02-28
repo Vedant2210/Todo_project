@@ -35,7 +35,7 @@ It demonstrates:
 
 ## 📂 Project Structure
 
-
+```
 backend/
 ├── src/
 │ ├── controllers/
@@ -54,7 +54,7 @@ frontend/
 │ ├── components/
 │ ├── services/
 │ └── App.jsx
-
+```
 
 ---
 
@@ -90,15 +90,15 @@ Role is embedded inside JWT and verified on each request.
 # 📌 API Versioning
 
 All APIs are versioned under:
-
+```
 /api/v1/
-
+```
 Example:
-
+```
 /api/v1/auth/login
 /api/v1/tasks
 /api/v1/admin/users
-
+```
 
 ---
 
@@ -150,27 +150,30 @@ To test APIs:
 
 ## 1️⃣ Backend Setup
 
-```bash
+```
 cd backend
 npm install
-
+```
 Create .env file:
-
+```
 PORT=5000
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret_key
-
+```
 Start backend:
-
+```
 npm run dev
+```
 2️⃣ Frontend Setup
+```
 cd frontend
 npm install
 npm run dev
-
+```
 Frontend runs on:
-
+```
 http://localhost:5173
+```
 🔒 Security Practices Implemented
 
 Password hashing using bcrypt
